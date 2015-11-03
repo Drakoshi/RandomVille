@@ -56,25 +56,27 @@ int main()
 	cout << endl;
 	cout << "It's a game of luck." << endl;
 	cout << "<If you are seeing this you are either a tester or game creator>" << endl;
+	cout << "<Or a complete strangeer, recently it was uploaded to GitHub>" << endl;
 	cout << "<Got an idea suggest it :D . Got a background story to suit this project?>" << endl;
 	cout << "<Please let me know!>" << endl;
 	cout << "Basic idea you travel around certain area" << endl;
 	cout << "You get random events" << endl;
-	cout << "It will continue till you die or bankrupt (not sure about it)" << endl;
+	cout << "For now it has no ending" << endl;
 	cout << "<Text to be edited in future>" << endl << endl;
 	cout << "Press any key to begin!";
 
 	char Choice = _getch();
 	if (Choice == 'X')
 		Player.TesterCheck(6934769);
-	else if (Choice == 'N' && Hacks)
+	// No longer have helper.exe ... basicly it created empty text files rdy to make events
+	/*else if (Choice == 'N' && Hacks)
 	{
 		system("CLS");
 		cout << "New E#.txt was created" << endl;
 		system("helper.exe");
 		system("pause > nul");
 		return 0;
-	}
+	}*/
 		
 
 	system("CLS");

@@ -149,6 +149,10 @@ void cActionEvent::ReadEvent(ifstream& in) // fix this
 		ReadBelogingsParam(in);
 		this->m_actionCallback = &PlayerFetishEvent;
 		break;
+	case AC_Gender:
+		this->m_actionCallback = &PlayerGenderEvent;
+		ReadValue(in);
+		break;
 	default:
 		break;
 	}
@@ -205,6 +209,8 @@ eActionEvent cActionEvent::ACToEnum(string eventType)
 		return AC_SERedditFunny;
 
 	// Belogings // Stats // Feelings // Fetishes
+	if(eventType == "AGender")
+		return AC_Gender;
 	if (eventType == "ABelogings")
 		return AC_Belogings;
 	if (eventType == "AStats")
@@ -293,6 +299,9 @@ void cConditionEvent::ExcecuteEvent(cPlayer& rPlayer)
 void cConditionEvent::ReadEvent(ifstream& in)
 {
 	// Reads condition .... This is the lazy way of doing it :| I will get to it sometime ...
+
+	// TO DO: must make this into proper conditions which could be written in txt FILE!
+
 	string condition;
 	in >> condition;
 	tmpEventCondition(condition);
@@ -323,4 +332,6 @@ void cConditionEvent::tmpEventCondition(string condition)
 		m_condition = &PlayerCityFunCond;
 	if (condition == "TheUncert")
 		m_condition = &TheUncertaintyCond;
+	if (condition == "XChange")
+		m_condition = &XChangeCond;
 }

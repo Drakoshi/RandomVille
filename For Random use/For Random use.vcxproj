@@ -14,18 +14,19 @@
     <ProjectGuid>{87027355-A703-4D1A-A845-AD92F899DD90}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ForRandomuse</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140_xp</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140_xp</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -94,8 +95,8 @@
     <ClInclude Include="Util.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Events\E0.txt" />
-    <Text Include="Events\E1.txt" />
+    <Text Include="Events\E00.txt" />
+    <Text Include="Events\E01.txt" />
     <Text Include="Events\E10.txt" />
     <Text Include="Events\E11.txt" />
     <Text Include="Events\E12.txt" />
@@ -106,20 +107,23 @@
     <Text Include="Events\E17.txt" />
     <Text Include="Events\E18.txt" />
     <Text Include="Events\E19.txt" />
-    <Text Include="Events\E2.txt" />
+    <Text Include="Events\E02.txt" />
     <Text Include="Events\E20.txt" />
     <Text Include="Events\E21.txt" />
     <Text Include="Events\E22.txt" />
     <Text Include="Events\E23.txt" />
     <Text Include="Events\Tutorial.txt" />
-    <Text Include="Events\E3.txt" />
-    <Text Include="Events\E4.txt" />
-    <Text Include="Events\E5.txt" />
-    <Text Include="Events\E6.txt" />
-    <Text Include="Events\E7.txt" />
-    <Text Include="Events\E8.txt" />
-    <Text Include="Events\E9.txt" />
+    <Text Include="Events\E03.txt" />
+    <Text Include="Events\E04.txt" />
+    <Text Include="Events\E05.txt" />
+    <Text Include="Events\E06.txt" />
+    <Text Include="Events\E07.txt" />
+    <Text Include="Events\E08.txt" />
+    <Text Include="Events\E09.txt" />
     <Text Include="Maps\Map.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

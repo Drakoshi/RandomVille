@@ -61,36 +61,6 @@
     <Text Include="Maps\Map.txt">
       <Filter>Resource Files\Maps</Filter>
     </Text>
-    <Text Include="Events\E0.txt">
-      <Filter>Resource Files\Events</Filter>
-    </Text>
-    <Text Include="Events\E1.txt">
-      <Filter>Resource Files\Events</Filter>
-    </Text>
-    <Text Include="Events\E2.txt">
-      <Filter>Resource Files\Events</Filter>
-    </Text>
-    <Text Include="Events\E3.txt">
-      <Filter>Resource Files\Events</Filter>
-    </Text>
-    <Text Include="Events\E4.txt">
-      <Filter>Resource Files\Events</Filter>
-    </Text>
-    <Text Include="Events\E5.txt">
-      <Filter>Resource Files\Events</Filter>
-    </Text>
-    <Text Include="Events\E6.txt">
-      <Filter>Resource Files\Events</Filter>
-    </Text>
-    <Text Include="Events\E7.txt">
-      <Filter>Resource Files\Events</Filter>
-    </Text>
-    <Text Include="Events\E8.txt">
-      <Filter>Resource Files\Events</Filter>
-    </Text>
-    <Text Include="Events\E9.txt">
-      <Filter>Resource Files\Events</Filter>
-    </Text>
     <Text Include="Events\E10.txt">
       <Filter>Resource Files\Events</Filter>
     </Text>
@@ -136,5 +106,40 @@
     <Text Include="Events\Tutorial.txt">
       <Filter>Resource Files\Events</Filter>
     </Text>
+    <Text Include="Events\E00.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E01.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E02.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E03.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E04.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E05.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E06.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E07.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E08.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E09.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

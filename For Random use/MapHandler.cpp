@@ -1,7 +1,9 @@
 #include "MapHandler.h"
+#include "Util.h"
 #include <Windows.h>
 #include <conio.h>
-#include "Util.h"
+#include <iostream>
+#include <fstream>
 
 bool cMapHandler::GetMap(string mapPath)
 {
@@ -38,6 +40,7 @@ bool cMapHandler::MapOpen(string gFilePath)
 {
 	bool fileOpen = cUtil::CheckFile(gFilePath);
 
+	// Make this Error message into a function for more usage
 	wstring Msg = L"Map is missing! \nCheck Files, ask creator for map! \nRetry? ";
 
 	if (!fileOpen)
@@ -115,28 +118,20 @@ void cMapHandler::PlaceEvent(int& eCount)
 	eventPoint.x = cUtil::RandomNumber(10, 0);
 	eventPoint.y = cUtil::RandomNumber(10, 0);
 
-	for (int y = 0; y < mapSize.y; y++)
+	// There used to be 2x FOR loops for ... unknown reason 
+	if (Map.at(GetCord(eventPoint.x, eventPoint.y, mapSize.x)) == ' ')
 	{
-		for (int x = 0; x < mapSize.x; x++)
+		Map.at(GetCord(eventPoint.x, eventPoint.y, mapSize.x)) = 'E';
+		eCount++;
+	}				
+	else
+	{
+		bool changed = true;
+		CheckChangeAround(eventPoint.x, eventPoint.y, ' ', changed);
+		if(changed)
 		{
-			if (eventPoint.x == x && eventPoint.y == y)
-			{
-				if (Map.at(GetCord(eventPoint.x, eventPoint.y, mapSize.x)) == ' ')
-				{
-					Map.at(GetCord(eventPoint.x, eventPoint.y, mapSize.x)) = 'E';
-					eCount++;
-				}				
-				else
-				{
-					bool changed = true;
-					CheckChangeAround(eventPoint.x, eventPoint.y, ' ', changed);
-					if(changed)
-					{
-						Map.at(GetCord(eventPoint.x, eventPoint.y, mapSize.x)) = 'E';
-						eCount++;
-					}
-				}
-			}
+			Map.at(GetCord(eventPoint.x, eventPoint.y, mapSize.x)) = 'E';
+			eCount++;
 		}
 	}
 }
@@ -155,25 +150,20 @@ void cMapHandler::CheckChangeAround(int& x, int& y, char target, bool& changed)
 	// RANDOMIZE THE SIDE ITS GETTING PUT TO
 
 	if (up)
-	{
 		if (Map.at(GetCord(x, y - 1, mapSize.x)) == target)
 			y--;
-	}
+
 	else if (down)
-	{
 		if (Map.at(GetCord(x, y + 1, mapSize.x)) == target)
 			y++;
-	}
+
 	else if (left)
-	{
 		if (Map.at(GetCord(x - 1, y, mapSize.x)) == target)
 			x--;
-	}
+
 	else if (right)
-	{
 		if (Map.at(GetCord(x + 1, y, mapSize.x)) == target)
 			x++;
-	}
 
 	if (CX == x && CY == y)
 		changed = false;
@@ -195,29 +185,27 @@ void cMapHandler::FindObject(int& X,int& Y,char target)
 	}
 }
 
-void cMapHandler::Movement(char choice,char& spot)
+void cMapHandler::Movement(char choice,char& lastSpot)
 {
-	//FindObject(playerCord.x,playerCord.y, 'P'); // since i added it in main loop 
-
 	int iChoice = (int)choice;
 
 	switch (iChoice)
 	{
 	case KEY_UP:
 		if (DirectionAvailable(playerCord.x, playerCord.y, 0, -1))
-			spot = playerMapMove(playerCord.x, playerCord.y, 0, -1, spot);
+			lastSpot = playerMapMove(playerCord.x, playerCord.y, 0, -1, lastSpot);
 		break;
 	case KEY_DOWN:
 		if (DirectionAvailable(playerCord.x, playerCord.y, 0, 1))
-			spot = playerMapMove(playerCord.x, playerCord.y, 0, 1, spot);
+			lastSpot = playerMapMove(playerCord.x, playerCord.y, 0, 1, lastSpot);
 		break;
 	case KEY_LEFT:
 		if (DirectionAvailable(playerCord.x, playerCord.y, -1, 0))
-			spot = playerMapMove(playerCord.x, playerCord.y, -1, 0, spot);
+			lastSpot = playerMapMove(playerCord.x, playerCord.y, -1, 0, lastSpot);
 		break;
 	case KEY_RIGHT:
 		if (DirectionAvailable(playerCord.x, playerCord.y, 1, 0))
-			spot = playerMapMove(playerCord.x, playerCord.y, 1, 0, spot);
+			lastSpot = playerMapMove(playerCord.x, playerCord.y, 1, 0, lastSpot);
 		break;
 	default:
 		break;
@@ -233,11 +221,11 @@ bool cMapHandler::DirectionAvailable(int x, int y, int xMod, int yMod)
 
 	return false;
 }
-char cMapHandler::playerMapMove(int x, int y, int xMod, int yMod,char spot)
+char cMapHandler::playerMapMove(int x, int y, int xMod, int yMod,char lastSpot)
 {
-	Map.at(GetCord(x, y, mapSize.x)) = spot;
-	spot = Map.at(GetCord(x + xMod, y + yMod, mapSize.x));
+	Map.at(GetCord(x, y, mapSize.x)) = lastSpot;
+	lastSpot = Map.at(GetCord(x + xMod, y + yMod, mapSize.x));
 	Map.at(GetCord(x + xMod, y + yMod, mapSize.x)) = 'P';
 
-	return spot;
+	return lastSpot;
 }

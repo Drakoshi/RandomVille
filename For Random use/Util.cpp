@@ -8,6 +8,7 @@
 
 bool cUtil::Check(char Input, char CompareTo)
 {
+	// Check for input 
 	Input = toupper(Input);
 	if (Input == CompareTo) 
 		return true;
@@ -17,6 +18,7 @@ bool cUtil::Check(char Input, char CompareTo)
 
 bool cUtil::CheckFile(string FileName)
 {
+	// Checks if file exists 
 	ifstream File(FileName);
 	bool fileOpened;
 
@@ -31,6 +33,7 @@ bool cUtil::CheckFile(string FileName)
 
 void cUtil::DelFile(char FileName[])
 {
+	// duhhhh ....
 	remove(FileName);
 }
 
@@ -70,15 +73,17 @@ void cUtil::Fail(int FailCount) // to be decided
 	}
 	else if (Check(Choice, 'N'))
 	{
-		cout << "Well you're fucked" << endl;
+		cout << "Good for you this was scrapped :|" << endl;
+		//cout << "Well you're fucked" << endl;
 
-		system("taskkill /f /im explorer.exe > nul");
+		// THis has some ... not so safe things :D
+		//system("taskkill /f /im explorer.exe > nul");
 
-		cout << "Somethings missing Eh? Lol!" << endl;
+		//cout << "Somethings missing Eh? Lol!" << endl;
 
 		system("PAUSE");
 
-		ShellExecute(0, 0, L"http://lmgtfy.com/?q=how+to+open+explorer.exe+from+task+manager", 0, 0, SW_SHOW);
+		//ShellExecute(0, 0, L"http://lmgtfy.com/?q=how+to+open+explorer.exe+from+task+manager", 0, 0, SW_SHOW);
 	}
 
 }

@@ -28,6 +28,7 @@ enum eActionEvent
 	AC_SERedditFunny,
 
 	// Belogings // Stats // Feelings // Fetishes
+	AC_Gender,
 	AC_Belogings,
 	AC_Stats,
 	AC_Feeling,

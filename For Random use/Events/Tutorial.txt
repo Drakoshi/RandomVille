@@ -3,7 +3,7 @@ This is an Event tutorial (version 2) for making valid events for current versio
 in here i will explain most of the things u need to know
 
 First line is for event Title!
-after title below it u need to write "#T"
+after title below it you need to write "#T"
 this indicates that text event ended!
 
 after that leave blank line
@@ -11,27 +11,29 @@ after that leave blank line
 Most likely u will want "!S" which is like a box for multiple events
 u can do "!T" just for text
 there is "!C" BUT THI IS NOT COMPLETE FEATURE! ( i will not explain this here )
-("!A") is possible but it would be useless
+"!A" is possible but it might require code editing/creators help
 
 i'll start with least complicated event
 
 "!T" shows that text event has started any lines below it will be read as text event and it will be shown in game
+write "#T" to end text event
 
 example:
 !T
 Hello,
-U Sir,
+You Sir,
 Need to take a shower
 #T
 
-in game u will get the text between "!T" and "#T"
+in game you will get the text between "!T" and "#T"
 
-"!A" is an action event which will do something like give money, change stats, give or take things u have
+"!A" is an action event which will do something like give money, change stats, give or take things you have
 
 including a list of things that are currently in this version:
 1. These will take a number next to it to set the amount of money it gives/takes or sets to 
 AMonC - changes money, gives or takes 
 AMonS - sets money to some value 
+AGender - changes gender (0 - Male, 1 - Female, any other number might fuck something up)
 
 example:
 !A
@@ -49,14 +51,14 @@ this will make your money equall to 1, it doesn't care how much u had
 ASave - forcefully saves the game 
 ASPause - pauses the game (need to press something to continue)
 ASCLS - clear the window (all text that was previously writen will be gone)
-ASSkype - will shutdown skype :D (please do not abuse it)
+ASSkype - will shutdown skype :D (please do not abuse it, DISABLED)
 ASERedditFunny - opens www.reddit.com/r/funny 
 
 3.Events bellow are more complex
 ABelogings - its like a box to hold stuff u have
-AStats - stats (str int agi stamina)
-AFeelings - happiness, insanity, social and others 
-AFetish - fetishes 
+AStats - stats
+AFeelings - basicly feelings
+AFetish - fetishes
 
 these events require 2 things to operate first one is index(to tell which) and value how much to increase/decrease stats or smth
 belogings and fetishes values are a bit different ... they accept only 0 for false and 1 for true
@@ -98,6 +100,6 @@ Hapiness was increased
 #T
 
 !A
-AFeelings Happiness 5
+AFeelings Happiness +5
 
 #S

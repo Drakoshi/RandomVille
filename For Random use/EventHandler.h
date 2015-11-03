@@ -21,12 +21,14 @@ void PlayerBelogingsEvent(cPlayer& rPlayer, void* pData);
 ///////////////////// STATS //////////////////////////
 void PlayerStatEvent(cPlayer& rPlayer, void* pData);
 void PlayerFeelingEvent(cPlayer& rPlayer, void* pData);
+void PlayerGenderEvent(cPlayer& rPlayer, void* pData);
 
 //////////////////// CONDITIONS /////////////////////
 bool PlayerEventGfProbCond(cPlayer& rPlayer);
 bool PlayerCityFunCond(cPlayer& rPlayer);
 bool TheUncertaintyCond(cPlayer& rPlayer);
-bool testCond(cPlayer& rPlayer);
+bool XChangeCond(cPlayer& rPlayer);
+//bool testCond(cPlayer& rPlayer);
 
 ///////////////////// Fetish ////////////////////////
 void PlayerFetishEvent(cPlayer& rPlayer, void* pData);
