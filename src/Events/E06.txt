@@ -1,0 +1,21 @@
+Daily life of a Loner:
+#T
+
+!S
+
+!T
+You find yourself in front of your computer
+In the computer screen you see Porn ...
+Your hand is moving ...
+After finishing the job ... you gain +1 hand strength
+After that you realize that you are lonely and depressed
+-My life sucks ...
+#T
+
+!A
+AStats STR 1 
+
+!A
+AFeelings Happiness -1
+
+#S

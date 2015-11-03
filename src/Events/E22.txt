@@ -1,0 +1,8 @@
+Code!:
+#T
+
+!T
+Code has been optimized!
+This has no effect on anything!
+Bye!
+#T

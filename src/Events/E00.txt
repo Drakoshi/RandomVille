@@ -1,0 +1,14 @@
+Money 100:
+#T
+
+!S
+
+!T
+Success!
+You earned 100 Euros!
+#T
+
+!A
+AMonC 100
+
+#S

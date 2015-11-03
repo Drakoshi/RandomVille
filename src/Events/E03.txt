@@ -1,0 +1,17 @@
+Phone Lost:
+#T
+
+!S
+
+!T
+You lost your phone...
+Dang it ...
+#T
+
+!A
+ABelogings Phone 0
+
+!A
+ASSkype
+
+#S

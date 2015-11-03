@@ -1,0 +1,57 @@
+City Center Fun:
+#T
+
+!S
+
+!T
+You are walking in city center
+Suddenly unfamiliar girl appears
+#T
+
+!C
+CityFun
+
+True
+!S
+
+!T
+She whispers into your ear
+-Hey, wanna have some fun?
+I say: Sure
+You hang around go to restaurant/movie
+She suggests going to her house
+-Sure
+You and the girl go to her house
+You have sex ...
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+You have obtained a Girlfriend
+#T
+
+!A
+ABelogings GF 1
+
+#S
+
+False
+!S
+
+!T
+Hi, i know you, you were from my class in school!
+-Wanna have some fun?
+-Sure
+"You hang around go to restaurant/movie
+It was fun but I have to go ... Bye
+#T
+
+!A
+AFeelings Happiness 1
+
+#S

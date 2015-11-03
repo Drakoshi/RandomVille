@@ -1,0 +1,14 @@
+Sleep'n'Save:
+#T
+
+!S
+
+!T
+You decided to sleep.
+In doing so your game has decided to Save itself!
+#T
+
+!A
+ASave
+
+#S

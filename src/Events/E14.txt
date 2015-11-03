@@ -1,0 +1,148 @@
+X-change:
+#T
+
+!T
+Do you know of VN(Visual novels)
+Yes/No ? Well I don't care :D
+Google it, if you need
+Here's a scenario from one
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+You are school student.
+Teachers asked to get something from Science class room
+In there you take a while to find required thing
+On the way back you spill some strange liquid on yourself
+You quickly wash the spot.
+You wait few minutes to make sure you are fine
+You seem okay
+You head out of the class room, deliver the thing you were asked to get
+Lessons were over so you head Home
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!C
+XChange
+
+True
+!S
+
+!T
+You dream that you are a girl
+Spending you daily life as you please
+It's a good dream
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+Next morning... Something is different
+Half a sleep you proceed to bathroom
+You were about to pee when u notice that your ...
+Manhood
+IS GONE!
+You touch the spot ... it's flat ...
+You feel something wet ...
+You keep touching it ... it feels good :)
+Sudden realization ... I turned into a girl ...
+You check if you have boobs ...
+Yup they're there
+You enjoy the pleasure yourself ...
+Touching you boobs, they are big and soft
+They're perfect any man would want them
+You slide your fingers down to your pussy
+You slide your fingers into your pussy
+It feels so good
+You masturbate till you're exhausted
+You wonder if you have your cherry...
+And what would be the feeling of sex ...
+But you collapse onto your bed
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+You have turned into a girl, you are quite happy about that :)
+Your adventures of being a such girl may continue :)
+<This effect is real it's not a joke :D>
+<To turn back u need to get the same event again>
+#T
+
+!A
+AGender 1
+
+!A
+AFeelings Happiness +5
+
+!A
+AFeelings Insanity +1
+
+#S
+
+False
+!S
+
+!T
+You dream that you are a boy
+Spending you daily life as you please
+It's a strange dream...
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+Next morning... Something is different
+Half a sleep you proceed to bathroom
+You were about to pee when u notice that you ...
+Have a penis ...
+WHAT THE FUCK?!
+You are lost and unhappy about your state...
+You faint onto your bed ...
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+You have turned into a boy, you are quite unhappy about that :)
+Your adventures of being a such boy may continue :)
+<This effect is real it's not a joke :D>
+<To turn back u need to get the same event again>
+#T
+
+!A
+AGender 0
+
+!A
+AFeelings Happiness -5
+
+!A
+AFeelings Insanity +1
+
+#S
