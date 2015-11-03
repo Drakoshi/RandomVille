@@ -1,0 +1,25 @@
+Le mouse:
+#T
+
+!S
+
+!T
+You are working/playing on your computer
+Suddenly your mouse freeze ...
+Fucking batteries died again ...
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+New batteries 2 Euros.
+#T
+
+!A
+AMonC -2
+
+#S

@@ -1,0 +1,71 @@
+Nightmare 1:
+#T
+
+!S
+
+!T
+... You open your eyes ...
+... You see ceiling ...
+... You look closely ...
+... You see a spider ...
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+... ... ... ... ... ...
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+You are outside
+Your house is burning
+Flame-thrower is in your hands ...
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+... ... ... ... ... ...
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+... You open your eyes ...
+... You see ceiling ...
+Thank god ... morning ...
+You are frightened from nightmare ...
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+Your happiness has decreased :(
+#T
+
+!A
+AFeelings Happiness -1
+
+#S

@@ -1,0 +1,46 @@
+The Uncertainty:
+#T
+
+!C
+TheUncert
+
+True
+!S
+
+!T
+You are in 12th grade
+You haven't decided what are going to do after school...
+You are uncertain about your future...
+You think about it for hours but...
+No conclusion has been reached u go to bed still thinking
+#T
+
+!A
+ASPause
+
+!A
+ASCLS
+
+!T
+Thinking a lot made you a little bit smarter
+#T
+
+!A
+AStats INT 1
+
+#S
+
+False
+!S
+
+!T
+Walking down the street you see teenagers
+You are thinking : ahhhhh .... school was nice
+No responsibilities, no job, just doing what you want to do ...
+You dream of you school days with pleasure
+#T
+
+!A
+AFeelings Happiness 1
+
+#S

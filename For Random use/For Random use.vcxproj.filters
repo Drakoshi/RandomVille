@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Events">
+      <UniqueIdentifier>{95a76e6e-7494-44c9-be09-9ad3aecb64fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Maps">
+      <UniqueIdentifier>{2a91d3e1-967c-4107-9012-7e83baf0887e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Maps\Map.txt">
+      <Filter>Resource Files\Maps</Filter>
+    </Text>
+    <Text Include="Events\E0.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E1.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E2.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E3.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E4.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E5.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E6.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E7.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E8.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E9.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E10.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E11.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E12.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E13.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E14.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E15.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E16.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E17.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E18.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E19.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E20.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E21.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E22.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\E23.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+    <Text Include="Events\Tutorial.txt">
+      <Filter>Resource Files\Events</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
